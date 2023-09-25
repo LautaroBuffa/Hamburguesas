@@ -10,10 +10,10 @@ const hamburguesas=[]
 generadorautomatico()
 hamburguesasOpcion()
 function generadorautomatico() {
-    hamburguesas.push(new Hamburguesa("https://img.freepik.com/fotos-premium/hamburguesa-queso-lechuga-tomate-lechuga-encima_741910-27.jpg?w=2000","Completa","$2500"))
-    hamburguesas.push(new Hamburguesa("https://img.freepik.com/fotos-premium/deliciosa-hamburguesa-carne-cruda-pan-tostado_919857-2314.jpg?w=2000","Champignon","$2500"))
-    hamburguesas.push(new Hamburguesa("https://img.freepik.com/fotos-premium/hamburguesa-mucha-salsa_713562-388.jpg?w=2000","Mouzzarela","$2500"))
-    hamburguesas.push(new Hamburguesa("https://img.freepik.com/fotos-premium/composicion-deliciosas-hamburguesas-papas-fritas_23-2148614112.jpg?w=2000","Bacon","$2500"))
+    hamburguesas.push(new Hamburguesa("https://quadernillos.com/wp-content/uploads/2021/09/fitzgerald-1.jpg","Completa","$2500"))
+    hamburguesas.push(new Hamburguesa("https://i2.wp.com/veganista.es/wp-content/uploads/2018/04/1-01.jpeg?fit=1200%2C700&ssl=1","Champignon","$2500"))
+    hamburguesas.push(new Hamburguesa("https://selecciones.com.mx/wp-content/uploads/2020/09/hamburguesas-de-lentejas.jpg","Pollo","$2500"))
+    hamburguesas.push(new Hamburguesa("https://www.masterpro-collection.com/sites/default/files/styles/receta_web/public/recetas/principales/CP-00067_0.jpg?itok=mbcvSvAv","Bacon","$2500"))
 }
 function hamburguesasOpcion(){
     let opciones = document.getElementById("opciones")
@@ -33,16 +33,16 @@ function hamburguesasOpcion(){
    </div>"`
    opciones.innerHTML += opcioneshtml
 }
-}/*
+}
 const buttonSeleccionar = document.querySelector("buttonHamburguesas");
 for (let i = 0; i < buttonSeleccionar.length; i++) {
     buttonSeleccionar[i].addEventListener("click", ()=>{
         alert ("jejejej")
     })
 }
-*/
 
-let buttonSeleccionar = document.querySelector("buttonHamburguesas")
+
+/*let buttonSeleccionar = document.querySelector("buttonHamburguesas")
 buttonSeleccionar.addEventListener ("click",function(){
     alert("alnsknsj")
-})
+})*/

@@ -61,7 +61,7 @@ a.nav-link:hover {
 /*Card de hamburguesas*/
 .hamburguesasCard {
   background-color: bisque;
-  padding: 5%;
+  padding: 2%;
   border-radius: 15px;
   margin-left: 2%;
   margin-right: 2%;
@@ -187,5 +187,12 @@ div.footerRedes {
   }
   .tituloSección {
     padding: 2%;
+  }
+  .hamburguesasCard {
+    width: 50%;
+  }
+  #opciones {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
