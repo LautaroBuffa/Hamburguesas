@@ -10,6 +10,16 @@ body{
     background-size: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.carrito{
+    background-color: $coloramarillo ;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom:5% ;
+      &:hover{
+        background-color: black;
+        color: $coloramarillo;
+      }
+}
 /* Navbar colores */
 
 h3.text-info{
@@ -88,6 +98,62 @@ a.nav-link:hover{
     align-content: center;
     grid-area: precioH;
 }
+/*Opcion seleccionada*/
+.hamburguesasSeleccionado{
+    background-color: bisque;
+    padding: 2%;
+    border-radius: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-row: auto auto auto auto;
+    grid-template-areas: "imgHS tituloHS" "imgHS precioHS" "detalle detalle" "buttonHS atras";
+}
+.detalle{
+    display: flex;
+    margin-top: 4%;
+    grid-area: detalle;
+    font-family: $letraDetalle ;
+}
+.agregarAlCarrito{
+    background-color: $coloramarillo ;
+    border-radius: 15px;
+    width: 100%;
+    grid-area: buttonHS;
+      &:hover{
+        background-color: black;
+        color: $coloramarillo;
+      }
+}
+.atras{
+    background-color: $coloramarillo ;
+    border-radius: 15px;
+    width: 100%;
+    grid-area: atras;
+      &:hover{
+        background-color: black;
+        color: $coloramarillo;
+      }
+}
+.imgHamburguesasSeleccionado{
+    border-radius: 15px;
+    width: 90%;
+    grid-area: imgHS;
+}
+.tituloHamburguesasSeleccionado{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4%;
+    grid-area: tituloHS;
+}
+.precioHamburguesasSeleccionado{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: precioHS;
+}
 /*Nosotros*/
 #textoNosotros{
     color: $coloramarillo;
@@ -120,16 +186,11 @@ div.footerRedes{
         width: 100%;
     }
     .imgproducto{
-        width: 50%;
+        width: 100%;
         border-radius: 5%;
         margin-top: 2%;
         margin-bottom: 2%;
     }
-.imgproducto{
-    width: 55%;
-    border-radius: 5%;
-    margin-top: 2%;
-}
 .tituloSección{
     padding: 5%;
 }
